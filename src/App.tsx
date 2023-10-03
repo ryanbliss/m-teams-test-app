@@ -12,7 +12,7 @@ import {
 import * as teamsJs from "@microsoft/teams-js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
-import { TabContent, TabConfig } from "./pages";
+import { TabContent, TabConfig, SharingPage } from "./pages";
 import { inTeams } from "./utils/inTeams";
 
 const App = () => {
@@ -91,6 +91,7 @@ const App = () => {
                     <Routes>
                         <Route path={"/"} element={<TabContent />} />
                         <Route path={"/config"} element={<TabConfig />} />
+                        <Route path={"/sharing"} element={<SharingPage />} />
                     </Routes>
                 </Router>
             </FluentProvider>
