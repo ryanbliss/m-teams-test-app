@@ -26,7 +26,7 @@
     "accentColor": "#38a2ff",
     "configurableTabs": [
         {
-            "configurationUrl": "https://ryanbliss.ngrok.io/config?inTeams=true",
+            "configurationUrl": "https://teams-tab-testing.vercel.app/config?inTeams=true",
             "canUpdateConfiguration": true,
             "scopes": ["groupChat", "team"],
             "context": [
@@ -43,14 +43,14 @@
         {
           "entityId": "mom-test",
           "name": "Mom",
-          "contentUrl": "https://ryanbliss.ngrok.io/?inTeams=true",
-          "websiteUrl": "https://ryanbliss.ngrok.io/?inTeams=false",
+          "contentUrl": "https://teams-tab-testing.vercel.app/?inTeams=true",
+          "websiteUrl": "https://teams-tab-testing.vercel.app/?inTeams=false",
           "scopes": ["personal"]
         },
         { "entityId": "about", "scopes": ["personal"] }
       ],
     "validDomains": [
-        "*.ngrok.io"
+        "teams-tab-testing.vercel.app"
     ],
     "showLoadingIndicator": true,
     "authorization": {
