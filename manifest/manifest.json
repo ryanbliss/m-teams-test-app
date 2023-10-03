@@ -1,0 +1,90 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.16/MicrosoftTeams.schema.json",
+    "version": "1.0.1",
+    "manifestVersion": "1.16",
+    "id": "a1aff73f-adec-4d10-b016-8280de6ca2c1",
+    "packageName": "com.microsoft.teams.mom",
+    "name": {
+        "short": "Mom",
+        "full": "Mom - MetaOS Super Tester"
+    },
+    "developer": {
+        "name": "Your name here",
+        "mpnId": "",
+        "websiteUrl": "https://www.example.com",
+        "privacyUrl": "https://www.example.com/PrivacyStatement",
+        "termsOfUseUrl": "https://www.example.com/TermsOfUse"
+    },
+    "description": {
+        "short": "Test Teams all day, every day.",
+        "full": "Such a great test app!"
+    },
+    "icons": {
+        "outline": "outline.png",
+        "color": "color.png"
+    },
+    "accentColor": "#38a2ff",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://ryanbliss.ngrok.io/config?inTeams=true",
+            "canUpdateConfiguration": true,
+            "scopes": ["groupChat", "team"],
+            "context": [
+                "channelTab",
+                "privateChatTab",
+                "meetingSidePanel",
+                "meetingStage",
+                "meetingDetailsTab",
+                "meetingChatTab"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+          "entityId": "mom-test",
+          "name": "Mom",
+          "contentUrl": "https://ryanbliss.ngrok.io/?inTeams=true",
+          "websiteUrl": "https://ryanbliss.ngrok.io/?inTeams=false",
+          "scopes": ["personal"]
+        },
+        { "entityId": "about", "scopes": ["personal"] }
+      ],
+    "validDomains": [
+        "*.ngrok.io"
+    ],
+    "showLoadingIndicator": true,
+    "authorization": {
+        "permissions": {
+            "orgWide": [],
+            "resourceSpecific": [
+                {
+                    "name": "MeetingStage.Write.Chat",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "ChannelMeetingStage.Write.Group",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "LiveShareSession.ReadWrite.Chat",
+                    "type": "Delegated"
+                },
+                {
+                    "name": "LiveShareSession.ReadWrite.Group",
+                    "type": "Delegated"
+                }
+            ]
+        }
+    },
+    "webApplicationInfo": {
+        "id": "34d8e67c-2758-40b5-836f-eb7defa875d3",
+        "resource": ""
+    },
+    "devicePermissions": [
+        "openExternal",
+        "midi",
+        "notifications",
+        "media",
+        "geolocation"
+    ]
+}
